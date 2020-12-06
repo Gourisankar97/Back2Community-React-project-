@@ -1,0 +1,144 @@
+.Navbar-Items{
+    /* background: rgb(4,1,75); */
+    color: #a89dda;
+    background: rgb(39,4,126);
+    background: radial-gradient(circle, rgba(39,4,126,1) 0%, rgba(67,5,184,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.0rem;
+    padding: 10px 10px;
+
+}
+.navbar-logo{
+    color: aliceblue;
+    justify-self: start;
+    margin-left: 20px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+}
+
+.fa-react{
+    margin-left: 0.5rem;
+    font-size: 1.6rem;
+}
+
+.nav-menu{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    width: 70vw;
+    justify-content: end;
+    margin-right: 2rem;
+
+}
+
+.nav-links{
+    color: white;
+    text-decoration: none;
+    padding: 0.5re 1rem;
+}
+.nav-links:hover{
+    background-color: #6d76f7;
+    border-radius: 3px;
+    transition: all 0.2s ease-out;
+
+}
+.fa-bars{
+    color: #fff;
+
+}
+
+.nav-links-mobile{
+    display: none;
+}
+
+.menu-icon{
+    display: none;
+}
+Button{
+    margin-left: 10px;
+}
+.log-in{
+
+    background-color: rgb(13, 2, 60);
+}
+
+@media screen and (max-width: 960px){
+    .Navbar-Items{
+        position: relative;
+    }
+    .nav-menu{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 500px;
+        position: absolute;
+        top: 55px;
+        left: -100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+    .nav-menu.active{
+        background-color:rgb(39,4,126); 
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 1;
+    }
+    .nav-links{
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+
+    }
+    .nav-links:hover{
+        background-color:rgb(63, 20, 174);
+        border-radius: 0;
+    }
+    .navbar-logo{
+        position: absolute;
+        top:0;
+        left:0;
+        margin-left: auto;
+        transform: translate(25%, 50%);
+    }
+    .menu-icon{
+        display: block;
+        position: absolute;
+        top: -8px;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+
+    }
+    .fa-times{
+        color: #fff;
+        font-size: 2rem;
+    }
+    .nav-links-mobile{
+        display: block;
+        text-align: center;
+        padding: 1.5rem;
+        margin: 1rem auto;
+        border-radius: 4px;
+        width: 80%;
+        background:#02b1bd;
+        color: rgb(186, 250, 255);
+        text-decoration: none;
+    }
+    .nav-links-mobile:hover{
+        background-color: #60d5dd;
+        transition: all 0.2s ease-out;
+    }
+
+    Button{
+        visibility: hidden;
+    }
+
+}

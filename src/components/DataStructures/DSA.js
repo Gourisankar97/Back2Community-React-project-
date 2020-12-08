@@ -1,11 +1,13 @@
-import React from 'react'
+import React, {useState} from 'react'
 import DSAItems from './DSAItems'
 import './DsA.css'
 import BTNLetsgo from './BTNLetsgo'
 function DSA() {
 
+    const [loadDSA, setLoad] = useState(false);
+
     return (
-        <div>
+        <div className="dsa-div">
             <ul>
                 {
                 DSAItems.map((item,index) => {
@@ -13,8 +15,7 @@ function DSA() {
                         <div className="ds-algo">
                             <li>
                             {item.title} <i className={item.icon}/> 
-                             <BTNLetsgo></BTNLetsgo>
-                            
+                             <a href={item.title}> <BTNLetsgo ></BTNLetsgo></a>
                             </li>
                         </div>
                         

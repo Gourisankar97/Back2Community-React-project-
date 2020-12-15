@@ -1,68 +1,74 @@
 const DSAItems = [
     {
         title: 'Arrays',
-        url: '#',
+        url: 'Arrays',
         cName: 'ds-algo',
         icon: 'fal fa-battery-full'
     },
     {
         title: 'Linked List',
-        url: '#',
+        url: 'Linked-List',
         cName: 'ds-algo',
         icon: 'fas fa-ellipsis-h-alt'
     },
     {
         title: 'Stack & Queues',
-        url: '#',
+        url: 'Stack&Queues',
         cName: 'ds-algo',
         icon: 'fas fa-stream'
     },
     {
         title: 'String',
-        url: '#',
+        url: 'String',
         cName: 'ds-algo',
         icon: 'fab fa-stripe-s'
     },
     {
         title: 'Recursion',
-        url: '#',
+        url: 'Recursion',
         cName: 'ds-algo',
         icon: 'fas fa-undo-alt'
     },
     {
         title: 'Backtracking',
-        url: '#',
+        url: 'Backtracking',
         cName: 'ds-algo',
         icon: 'far fa-send-back'
     },
     
     {
         title: 'Binary Tree',
-        url: '#',
+        url: 'Binary-Tree',
         cName: 'ds-algo',
         icon: 'fas fa-sitemap'
     },
     {
         title: 'Binary Search Tree',
-        url: '#',
+        url: 'Binary-Search-Tree',
         cName: 'ds-algo',
         icon: 'fab fa-pagelines'
     },
     {
-        title: 'HashMap & Heap',
-        url: '#',
+        title: 'HashMap',
+        url: 'HashMap',
         cName: 'ds-algo',
-        icon: 'fas fa-map-signs'
+        icon: 'fas fa-server'
+    },
+    {
+        title: 'Heap',
+        url: 'Heap',
+        cName: 'ds-algo',
+        icon: 'fal fa-balance-scale'
     },
     {
         title: 'Graph',
-        url: '#',
+        url: 'Graph',
         cName: 'ds-algo',
         icon: 'fad fa-chart-network'
     },
     {
         title: 'Dynamic programming',
-        url: '#',
+        url: 'Dynamic-programming',
         cName: 'ds-algo',
         icon: 'fas fa-th'
     },

@@ -3,6 +3,9 @@ import { Button } from '../Button'
 import MenuItems from './MenuItems'
 import './Navbar.css'
 
+import {Link} from 'react-router-dom'
+
+
 class Navbar extends Component {
     state = {
         clicked: false
@@ -15,15 +18,16 @@ class Navbar extends Component {
     }
 
 
-    componentWillMount()
-    {
-        document.title = "Back 2 Community";
-    }
+    // componentWillMount()
+    // {
+    //     document.title = "Back 2 Community";
+    // }
 
-    componentDidMount()
-    {
-        document.title = "Back 2 Community";
-    }
+    // componentDidMount()
+    // {
+    //     document.title = "Back 2 Community";
+    // }
+
     render() {
         return (
             <nav className = "Navbar-Items">
@@ -36,11 +40,13 @@ class Navbar extends Component {
                 <ul className={this.state.clicked? 'nav-menu active':'nav-menu'}>
                     {MenuItems.map((item,index) =>{
                         return (
+                        <Link style={{textDecoration:"none"}} to={item.url}> 
                         <li>
                             <a className={item.cName} href={item.url}> 
                             {item.title}
                             </a>
                         </li>
+                        </Link>
                         )
                     })}
                     

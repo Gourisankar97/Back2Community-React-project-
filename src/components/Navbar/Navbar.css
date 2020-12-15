@@ -71,7 +71,10 @@ Button{
 
     background-color: rgb(13, 2, 60);
 }
+Link{
 
+    text-decoration: none;
+}
 @media screen and (max-width: 960px){
     .Navbar-Items{
         position: fixed;

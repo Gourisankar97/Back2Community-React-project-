@@ -1,9 +1,15 @@
 import React from 'react'
+import './Q.css'
 
-export default function Questions() {
+
+function Questions(props) {
     return (
-        <div>
-            Quesions
+        <div className="questions">
+            <div>
+                <h1>{props.name}</h1>
+            </div>
         </div>
     )
 }
+
+export default Questions;

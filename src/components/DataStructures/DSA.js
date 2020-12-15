@@ -2,7 +2,9 @@ import React, {useState} from 'react'
 import DSAItems from './DSAItems'
 import './DsA.css'
 import BTNLetsgo from './BTNLetsgo'
+import {Link} from 'react-router-dom'
 function DSA() {
+    document.title = "Back 2 Community";
 
     const [loadDSA, setLoad] = useState(false);
 
@@ -15,7 +17,7 @@ function DSA() {
                         <div className="ds-algo">
                             <li>
                             {item.title} <i className={item.icon}/> 
-                             <a href={item.title}> <BTNLetsgo ></BTNLetsgo></a>
+                             <Link to={item.url}> <BTNLetsgo ></BTNLetsgo></Link>
                             </li>
                         </div>
                         
